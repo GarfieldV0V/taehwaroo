@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{
+    /* html제작시 기본적으로 소량의 마진과 패딩값이 적용되어 있으므로, 기존의 값을 제거시켜주는 목적 */
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "맑은 고딕", "돋움"; /* 폰트 종류 */  
+    /* font-family: "사용되는 폰트", "대체폰트"; */ 
+    font-size:12px; /* 기본 폰트 사이즈 */
+    color: #444444; /* 기본 폰트 색상 */
+}
+
+ul, ol{
+    list-style-type: none; /* 리스트 앞 특수문자 제거  */
+}
+
+a{
+    text-decoration: none; /* a태그의 밑줄 제거 */
+    color:#444; /* a태그의 문자 색상 */
+}
+
+img, input{
+    border:0; /* 이미지 태그와 인풋태그에 존재하는 소량의 스트로크(선)값을 제거  */
+    vertical-align: top; /* 블록 영역(div, p태그) 안에서 이미지 및 인풋 구성이 포함될 때 하단에 고백이 생기지 않도록 만들어주는 Trick과 같은 속성 */
+}

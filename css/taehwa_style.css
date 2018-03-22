@@ -1,0 +1,1255 @@
+@charset "utf-8";
+
+/* All Mobile Code */
+
+header, main, footer{
+    position: relative;
+}
+
+html, body{
+    font-family: "Adobe 명조 Std", serif;
+    font-size:1.000em;
+}
+
+#wrap{
+    width:100%;
+    height:auto;
+    overflow: hidden;    
+}
+
+header{
+    width:100%;
+    height:auto;
+}
+
+#headerIn{
+    position: relative;
+    display:flex;
+    width:100%;
+    height:60px;
+}
+
+.logo{
+    position: relative;
+    width:70px;
+    height:19px;
+    top:50%;
+    transform: translateY(-50%);
+    left:5%;
+}
+
+.logo span{
+    display:block;
+    width:70px;
+    height:19px;
+    background:url("../img/logo.png")  no-repeat center / 70px 19px;
+}
+
+.menu{
+    position: absolute;
+    width:24px;
+    height:18px;
+    top:50%;
+    transform: translateY(-50%);
+    right:5%;
+}
+
+.menu>a{
+    display:block;
+    width:24px;
+    height:18px;
+}
+
+.menu span{
+    display:block;
+    width:24px;
+    height:18px;
+    background:url("../img/menubar.png")  no-repeat center / 24px 18px;
+}
+
+#gnb{
+    position: fixed;
+    right:-100%; 
+    width:100%;
+    top:0;
+    height:100%;
+    display:none;
+    background:#336633;
+    z-index:999;
+}
+
+.gnb_text>ul>li>a{
+    position:relative;
+    top:50px;
+    left:20px;
+    display:block;
+    font-size:1.125em;
+    font-weight: 600;
+    text-indent: 10px;
+    padding:10px 0;
+    color:#fff;
+}
+
+/* gnb close 버튼  */
+.x_btn{
+    position: absolute;
+    top:54px;
+    right:30px;
+}
+
+.x_btn>a{
+    display:block;
+    width:20px;
+    height:20px;
+}
+
+.x_btn>a>span{
+    display:block;
+    width:20px;
+    height:20px;
+    background:url("../img/w61155.png") no-repeat center / cover;
+}
+
+#gnb2{
+    display:none;
+}
+
+/* main 영역 시작 */
+main{
+    width:100%;
+    height:auto;
+}
+
+#conts1{
+    width:100%;
+    height:auto;
+}
+
+#conts1>ul>li:nth-child(1),
+#conts1>ul>li:nth-child(2){
+    position: relative;
+    font-family: "Adobe 명조 Std", serif;
+    font-weight: 600;
+    font-size:1.000em;
+    top:70px;
+    display:block;
+    margin-bottom:3px;
+    color:#666;
+    text-align: center;
+    letter-spacing: -1;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+}
+
+#conts1>ul>li:nth-child(2){
+    color:#336633;    
+    font-size:1.250em;
+}
+
+#conts1>ul>li:nth-child(3)>img{
+    margin-top:200px;
+    width:100%;
+    height:auto;    
+}
+
+#conts2{
+    width:100%;
+    height:auto;
+    margin-top:70px;
+}
+
+.c_01 p{
+    font-family: "Adobe 명조 Std", serif;
+    font-weight: 600;
+    font-size:1.000em;
+    display:block;
+    margin-bottom:3px;
+    color:#666;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -1;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;    
+}
+
+.c_01 img{
+    display:block;
+    width:50%;
+    height:auto;    
+    margin:0 auto;
+    margin-top:20px;
+}
+
+.c_02{
+    position: relative;
+    margin-top:50px;
+}
+
+.c_02>ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+/* click box*/
+
+.c_02t, .c_02t02, .c_02t03{
+    display:block;
+    width:100px;
+    height:30px;
+    text-align: center;
+    padding:35px 0;
+    line-height: 24px;
+    border:1px solid #669966;
+    color:#669966;
+}
+
+
+.enter, .enter_02, .enter_03{
+    position: absolute;
+    display:none;
+    top:-18px;
+    width:100%;
+    height:120px;
+    background:rgb(233, 232, 232);
+}
+
+.enter>li, .enter_02>li, .enter_03>li{
+    position: relative;
+    top:16px;
+    padding:10px 0;
+}
+
+
+.enter_tit{
+    display:block;
+    text-align:center;
+    font-size:0.875em;
+    line-height: 14px;
+    color:#336633;
+}
+
+.enter_tit:after{
+    margin:0 auto;
+    content: "";
+    display:block;
+    width:80%;
+    height:1px;
+    background:#000;
+}
+
+.enter>li>span:nth-child(2),
+.enter_02>li>span:nth-child(2),
+.enter_03>li>span:nth-child(2){
+    display:block;
+    margin-top:16px;
+    padding:0 30px;
+    font-size:0.750em;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* box 버튼 */
+.close_btn, 
+.close_btn02,
+.close_btn03{
+    display:block;
+    position: relative;
+    top:30px;
+    margin:0 auto;
+    width:30px;
+    height:30px;
+}
+
+.close_btn03{
+    top:0;
+}
+
+.close_btn img,
+.close_btn02 img,
+.close_btn03 img{
+    display:block;
+    width:30px;
+    height:30px;
+}
+
+
+#conts3{
+    margin-top:70px;
+    width:100%;
+    height:auto;
+}
+
+#conts3>ul>li:nth-child(1)>span{
+    font-family: "Adobe 명조 Std", serif;
+    font-weight: 600;
+    display:block;
+    margin-bottom:3px;
+    color:#336633;
+    text-align: center;
+    letter-spacing: -1;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased; 
+}
+
+#conts3>ul>li:nth-child(2)>img{
+    display:block;
+    width:176px;
+    height:238px;
+    margin:40px auto;
+}
+
+#conts3>ul>li:last-child>span{
+    display:block;
+    margin-top:30px;
+    text-align: center;
+    font-size:0.875em;
+    line-height:21px;
+}
+
+#conts4{
+    position: relative;
+    width:100%;
+    height:auto;
+    margin-top:30px;
+}
+
+#conts4>span{
+    display:block;
+    position: absolute;
+    top:20px;
+    font-family: "Adobe 명조 Std", serif;
+    font-weight: 600;
+    font-size:1.000em;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height:auto;
+    color:#fff;
+    letter-spacing: -1;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased; 
+    z-index:9;
+}
+
+.slider img{
+    width:100%;
+    height:auto;
+}
+
+/* 제품소개 */
+
+#conts5{
+    position: relative;
+    width:100%;
+    height:auto;
+    padding-top:30px;
+    padding-bottom:140px;
+    background:url("../img/rice_back.jpg") no-repeat center / cover;
+} 
+
+#conts6{
+    position: relative;
+    width:100%;
+    height:auto;
+    padding-top:30px;
+    padding-bottom:140px;
+    background:url("../img/rice2_back.jpg") no-repeat center / cover;
+}
+
+.c_05t, .c_06t{
+    display:block;
+    position: relative;
+    top:20%;
+    left:6%;
+    color:#336633;
+    font-size:1.250em;
+}
+
+#conts5 p,
+#conts6 p{
+    margin-top:10%;
+    margin-left:6%;
+    line-height:18px;
+    font-size:0.750em;
+    color:#666;
+}
+
+#conts5 img,
+#conts6 img{
+    position: absolute;
+    width:84px;
+    height:280px;
+    bottom:6%;
+    right:14%;
+}
+
+/* 제품소개 끝 */
+
+#conts7{
+    position: relative;
+    width:100%;
+    height:auto;
+    padding-top:30px;
+    padding-bottom:140px;
+    background:#fff;
+}
+
+#conts7>ul>li>p{
+    margin-top:5%;
+    margin-left:6%;
+    line-height:20px;
+    font-size:0.875em;
+    color:#666;
+}
+
+#conts7 img{
+    position: absolute;
+    width:160px;
+    height:133px;
+    bottom:6%;
+    right:12%;
+}
+
+#conts8{
+    position: relative;
+    width:100%;
+    height:auto;
+    padding-top:30px;
+    padding-bottom:140px;
+}
+
+.c_08t{
+    position: absolute;
+    display:block;
+    top:10%;
+    left:6%;    
+    color:#336633;
+    font-size:1.250em;
+}
+
+.c_08ts{
+    position: absolute;
+    width:88%;
+    height:auto;
+    top:20%; 
+    left:6%;
+    line-height:20px;
+    font-size:0.875em;
+    color:#666;
+}
+
+#conts8>ul>li:nth-child(2)>img,
+#conts8>ul>li:nth-child(3)>img,
+#conts8>ul>li:nth-child(4)>img{
+    width:100%;
+    height:auto;
+}
+
+
+#conts8_1{
+    display:none;
+}
+
+#conts9{
+    position: relative;
+    top:-100px;
+    width:100%;
+    padding:20px 0;
+    height:auto;
+}
+
+
+#conts9>span{
+    display:block;
+    font-family: "Adobe 명조 Std", serif;
+    font-weight: 600;
+    font-size:1.000em;    
+    margin-bottom:3px;
+    color:#666;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -1;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased; 
+}
+
+
+#conts9 ul{    
+    width:86%;
+    margin:0 auto;
+    margin-top:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#conts9 li{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-bottom:20px;
+}
+
+#conts9 ul>li>img{
+    display:block;
+    width:100px;
+    height:140px;
+}
+
+#conts10{
+    position: relative;
+    top:-50px;
+    width:100%;
+    height:auto;
+    margin:0 auto;
+}
+
+.conts10_t>p{
+    font-size:1.250em;
+    text-align: center;
+    line-height:30px;
+}
+
+.conts10_t> span{
+    display:block;
+    font-size:1.250em;
+    text-align: center;
+    line-height:30px;
+    padding:10px 0;
+    color:#c9701d;
+    font-weight: 600;
+}
+/* 지도 */
+
+/* 선택버튼 */
+.s1{
+    width:140px;
+    height:30px;
+    margin:0 auto 30px auto;
+    margin-top:10px;
+}
+
+.selbox{
+    display:block;
+    width:140px;
+    height:30px;
+}
+
+#map{
+    position: relative;
+    width:320px;
+    height:430px;
+    margin:0 auto;
+    background: url("../img/map.png") no-repeat center / 320px 430px;
+}
+
+#us{
+    position: relative;
+    width:320px;
+    height:430px;
+}
+
+/* *******울산*********** */
+#us>a{
+    position: absolute;
+    display:block;
+    width:10px;
+    height:10px;
+    top:290px;
+    right:23px;
+    z-index:999;
+}
+
+.uls{
+    position: absolute;
+    display:block;
+    width:100%;
+    height:auto;
+    font-family: "맑은 고딕", sans-serif;
+    font-size:0.625em;
+    color:#666;
+    text-align: center;
+    bottom:-20px;
+    left:0;
+}
+
+.uls>ul{
+    width:320px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border:1px solid #999;
+    background: #fff;
+    padding-top:20px;
+}
+
+#kp>span, #hg>span, #sh>span, #my>span{
+    position: absolute;
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border:1px solid #999;
+    background: #fff;
+    padding:10px;
+    bottom:0;
+}
+
+.uls>ul>li{
+    width:33.333%;
+    height:50px;
+}
+
+/* ******** 경주/포항 ******** */
+#kp>a{
+    position: absolute;
+    display:block;
+    width:10px;
+    height:10px;
+    top:244px;
+    right:30px;
+}
+
+.kps, .hgs, .scs, 
+.mys{
+    position: relative;
+    display:block;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
+    height:auto;
+    font-family: "맑은 고딕", sans-serif;
+    font-size:0.750em;
+    color:#666;
+    text-align: center;
+}
+
+/* ******** 해운대 기장 ******** */
+#hg>a{
+    position: absolute;
+    display:block;
+    width:10px;
+    height:10px;
+    top:313px;
+    left:266px;
+}
+
+/* ***********서창********** */
+#sh>a{
+    position: absolute;
+    display:block;
+    width:10px;
+    height:10px;
+    top:287px;
+    left:245px;
+}
+
+/* ***********밀양/양산******** */
+
+#my>a{
+    position: absolute;
+    display:block;
+    width:10px;
+    height:10px;
+    top:280px;
+    left:230px;
+}
+
+.hw{
+    display:none;
+}
+
+
+/* footer영역 */
+#conts_footer{
+    width:100%;
+    height:100px;
+    background:#666;
+}
+
+#conts_footer>p{
+    display:block;
+    padding:20px;
+    color:#fff;
+    font-size:12px;
+    line-height:20px;
+    font-family: "맑은 고딕", sans-serif;
+}
+
+@media all and (min-width:768px){
+
+    html, body{
+        font-family: "Adobe 명조 Std", serif;
+        font-size:1.250em;
+    }
+    
+.logo{
+    position: relative;
+    width:120px;
+    height:33px;
+    top:50%;
+    transform: translateY(-50%);
+    left:10px;
+}
+
+.logo span{
+    display:block;
+    width:120px;
+    height:33px;
+    background:url("../img/logo.png")  no-repeat center / 120px 33px;
+}
+
+.menu{
+    position: absolute;
+    width:32px;
+    height:24px;
+}
+
+.menu>a{
+    display:block;
+    width:32px;
+    height:24px;
+}
+
+.menu span{
+    width:32px;
+    height:24px;
+    background:url("../img/menubar.png")  no-repeat center / 32px 24px;
+}
+
+.x_btn>a{
+    width:40px;
+    height:40px;
+}
+
+.x_btn>a>span{
+    width:40px;
+    height:40px;
+}
+
+#conts1>ul>li:nth-child(1),
+#conts1>ul>li:nth-child(2){
+    line-height:50px;
+
+}
+
+#conts1>ul>li:nth-child(2){
+    color:#336633;    
+    font-size:1.250em;
+}
+
+.c_01 p{
+   line-height: 40px;
+}
+
+
+/* 엔터 */
+
+.c_02t, .c_02t02, .c_02t03{
+    display:block;
+    width:130px;
+    height:50px;
+    text-align: center;
+    font-size:0.875em;
+    padding:40px 10px;
+    line-height: 30px;
+}
+
+.enter, .enter_02, .enter_03{
+    top:-10px;
+    height:180px;
+}
+
+.enter>li, .enter_02>li, .enter_03>li{
+    top:20px;
+}
+
+.enter>li>span:nth-child(2),
+.enter_02>li>span:nth-child(2),
+.enter_03>li>span:nth-child(2){
+    margin-top:20px;
+    font-size:0.875em;
+    line-height:28px;
+    padding:10px 40px;
+}
+
+.close_btn, 
+.close_btn02{
+    top:40px;
+}
+
+.close_btn03{
+    top:-16px;
+}
+
+
+#conts3>ul>li:nth-child(2)>img{
+    width:130px;
+    height:auto;
+    padding:40px 0;
+}
+
+#conts3>ul>li:last-child>span{
+    font-size:0.875em;
+    line-height:32px;
+}
+
+
+/* 제품소개 */
+
+
+#conts5 p,
+#conts6 p{
+    line-height:30px;
+    font-size:0.875em;
+}
+
+#conts5 img,
+#conts6 img{
+    width:120px;
+    height:410px;
+}
+
+/* 막걸리 시 */
+
+
+#conts7>ul>li>p{
+    line-height:32px;
+    font-size:0.875em;
+}
+
+#conts7 img{
+    width:220px;
+    height:182px;
+}
+
+/* 효능 */
+.c_08t{
+    font-size:1.250em;
+}
+
+.c_08ts{
+    line-height:32px;
+}
+
+#conts8_1{
+    display:none;
+}
+
+/* 라이센스 */
+
+#conts9>span{    
+    line-height: 32px;
+}
+
+#conts9 ul>li>img{
+    display:block;
+    width:150px;
+    height:210px;
+}
+
+/* 지역별 영업점 안내 */
+
+.conts10_t>p{    
+    line-height:40px;
+}
+
+.conts10_t> span{    
+    padding:20px 0;
+}
+
+#map{
+    margin-bottom:50px;
+}
+.uls>ul{
+    position: absolute;
+    width:500px;
+    height:150px;
+    left:-100px;
+    top:-100px;
+    padding-top:10px;
+    
+}
+
+#map span{
+    font-size:12px;
+}
+}
+@media all and (min-width:1200px){
+   html, body{
+            font-family: "Adobe 명조 Std", serif;
+            font-size:1.250em;
+        }
+      
+    header{
+        width:100%;
+        height:auto;
+    }
+
+    #headerIn{
+        display:none;
+    }
+    
+    #headerIn2{
+        display:block;
+        display:flex;
+        position: relative;
+        top:16px;
+        width:90%;
+        height:auto;
+        margin:0 auto;
+    }
+
+    .logo2{
+        width:140px;
+        height:38px;
+    }
+
+    
+    .logo2 span{
+        display:block;
+        width:140px;
+        height:38px;
+        background:url("../img/logo2.png")  no-repeat center / 140px 38px;
+    }
+    
+    #gnb2{
+        position: relative;
+        display:flex;
+        width:100%;
+        height:auto; 
+    }
+    
+    .gnb_text2{        
+        margin-top:20px;
+        width:60%;
+        height:auto;
+        margin-left:10%;
+    }
+
+    .gnb_text2>ul{
+        display:flex;
+        margin-left:10%;
+        width:100%;
+        height:auto;  
+        justify-content: space-around;      
+    }
+
+    .gnb_text2 a{
+        display:block;
+        padding:0 20px;
+        font-size:0.875em;
+        color:#666;
+    }
+
+    .sns{
+        position: relative;
+        margin-top:10px;
+        margin-left:10%;
+        width:14%;
+        height:auto;
+    }
+
+
+    .sns>ul{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .sns>ul>li>a>img{
+        width:40px;
+        height:40px;
+    }
+
+    #conts1>ul>li>span{
+        position: relative;
+        top:100px;
+    }
+
+    .c_01 img{
+        margin-top:40px;
+        width:421px;
+        height:397px;
+        
+    }
+    
+    .c_02{     
+        margin-top:100px;
+    }    
+
+       
+    .c_02>ul{
+        width:82%;
+        height:auto;
+        margin:0 auto;
+    }
+
+    .c_02t, .c_02t02, .c_02t03{ 
+    border:0;
+    }
+
+
+.enter, .enter_02, .enter_03{
+    position: relative;
+    top:4px;
+    display:block;
+    width:220px;
+    height:auto;
+    text-align: center;
+    padding:0;
+    line-height: 24px;
+    font-size:0.875em;
+    background:none;
+
+    }
+
+.enter>li, .enter_02>li, .enter_03>li{
+    position: relative;
+    top:16px;
+    padding:10px 0;
+}
+
+
+.enter_tit{
+    display:none;
+}
+
+.enter_tit:after{
+    display:none;
+}
+
+.enter>li>span:nth-child(2),
+.enter_02>li>span:nth-child(2),
+.enter_03>li>span:nth-child(2){    
+    position: relative;
+    width:100%;
+    height:auto;
+    left:-24px;
+    font-size:0.750em;
+    padding:0;
+    line-height: 28px;
+    text-align: center;
+}
+
+/* box 버튼 */
+.close_btn, 
+.close_btn02,
+.close_btn03{
+    display:none;
+}
+
+#conts3>ul>li:nth-child(2)>img{
+    width:560px;
+    height:766px;
+    margin:50px auto;
+}
+
+#conts3>ul>li:last-child>span{
+    margin-top:50px;
+    line-height:32px;
+}
+
+#conts4>span{
+    top:50px;
+}
+
+/* 제품소개 */
+
+#conts5>ul{
+    position: relative;
+    width:60%;
+    height:auto;
+    margin:20px auto;
+}
+
+.c_05t{
+    position: relative;
+    width:300px;
+    height:auto;
+    top:10%;
+    left:55%;
+}
+
+.c_05t:after{
+    content: "";
+    display:block;
+    width:500px;
+    height:1px;
+    margin:2px 0;
+    background:#336633;
+}
+
+#conts5 p{
+    position: relative;
+    width:680px;
+    height:400px;
+    top:10%;
+    left:50%;    
+}
+
+#conts5 img{
+    position:absolute;
+    width:140px;
+    height:489px;
+    bottom:10px;
+    left:20%;
+}
+
+#conts6>ul{
+    position: relative;
+    width:56%;
+    top:10px;
+    height:auto;
+    margin:0 auto;
+}
+
+.c_06t{
+    position: relative;
+    width:300px;
+    height:auto;
+    margin-top:10px;
+    left:10%;
+}
+
+.c_06t:after{
+    content: "";
+    display:block;
+    width:500px;
+    height:1px;
+    margin:2px 0;
+    background:#336633;
+}
+
+#conts6 p{
+    position: relative;
+    width:680px;
+    height:400px;
+    top:0;
+    left:4%;    
+}
+
+#conts6 img{
+    position:absolute;
+    width:140px;
+    height:489px;
+    bottom:10px;
+    right:0;
+}
+
+/* 제품소개 끝 */
+
+
+#conts7>ul{
+    position: relative;
+    width:60%;
+    top:10px;
+    height:auto;
+    margin:0 auto;
+}
+
+#conts7>ul>li>p{
+    position: relative;
+    left:60%;
+    line-height:30px;
+    font-size:0.875em;
+    color:#666;
+}
+
+#conts7 img{
+    position: absolute;
+    width:500px;
+    height:414px;
+    bottom:6%;
+    left:2%;
+}
+
+
+#conts8{
+    display:none;
+}
+
+
+#conts8_1{
+    position: relative;
+    width:100%;
+    height:auto;
+    padding-top:30px;
+    padding-bottom:140px;
+    background:rgb(243, 243, 243);
+}
+
+#conts8_1>ul{
+    display:flex;
+    width:90%;
+    height:auto;
+    margin:0 auto;
+}
+
+
+.conts8_1img>img{
+    margin-left:10%;
+}
+
+.conts8_1text{
+    margin-top:50px;
+}
+
+.conts8_1text li{
+    margin-bottom:40px;
+}
+
+.c_08ta{
+    position: relative;
+    display:block;
+    top:10%;
+    left:20%;    
+    color:#336633;
+    font-size:0.875em;
+    margin-bottom:10px;
+}
+
+.c_08tsa{
+    position: relative;
+    top:0;
+    left:20%;  
+    width:50%;
+    height:auto; 
+    line-height:24px;
+    font-size:0.750em;
+    color:#666;
+}
+
+/* 라이센스 */
+
+#conts9>span{    
+    line-height: 40px;
+}
+
+
+#conts9{
+    position: relative;
+    top:50px;
+}
+
+
+#conts9 li{
+    margin:30px 20px;
+}
+
+#conts9 ul>li>img{
+    display:block;
+    width:220px;
+    height:308px;
+}
+
+#conts10{
+    margin-top:100px;
+}
+
+
+#conts_footer>p{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+    color:#ccc;
+}
+
+}
